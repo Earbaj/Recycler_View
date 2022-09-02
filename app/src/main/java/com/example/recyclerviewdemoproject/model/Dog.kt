@@ -1,9 +1,9 @@
 package com.example.recyclerviewdemoproject.model
 
 import androidx.annotation.DrawableRes
-import androidx.annotation.StringRes
 
 data class Dog(
-    @StringRes val stringResourceId: Int,
+    val name: String,
+    val age: String,
     @DrawableRes val imageResourceId: Int
 ){}
