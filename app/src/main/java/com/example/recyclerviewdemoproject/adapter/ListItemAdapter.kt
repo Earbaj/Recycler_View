@@ -13,6 +13,11 @@ import com.example.recyclerviewdemoproject.model.Dog
 class ListItemAdapter(private val context: Context, private val dataset: List<Dog>):
     RecyclerView.Adapter<ListItemAdapter.ItemHolder>(){
 
+    // Provide a reference to the views for each data item
+    // Complex data items may need more than one view per item, and
+    // you provide access to all the views for a data item in a view holder.
+    // Each data item is just an Affirmation object.
+
     class ItemHolder(private val view: View): RecyclerView.ViewHolder(view) {
 
         val textView: TextView = view.findViewById(R.id.list_item_txt)
